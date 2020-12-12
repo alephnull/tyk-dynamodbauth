@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  opa:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: TykTechnologies/go-plugin-compiler-action@master
+        with:
+          gw_tag: v3.1.1
+          plugin_name: basicauth-ddb.so
