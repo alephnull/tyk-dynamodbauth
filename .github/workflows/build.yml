@@ -13,4 +13,4 @@ jobs:
       - uses: TykTechnologies/go-plugin-compiler-action@main
         with:
           gw_tag: v3.1.1
-          plugin_name: basicauth-ddb.so
+          name: basicauth-ddb.so
