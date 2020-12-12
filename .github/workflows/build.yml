@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+        
       - uses: TykTechnologies/go-plugin-compiler-action@main
         with:
           gw_tag: v3.1.1
